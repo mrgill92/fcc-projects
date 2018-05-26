@@ -1,0 +1,185 @@
+/* General Styles */
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Raleway";
+  background: #85e2ff;
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* Main Content */
+
+main {
+  background: #eee;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto;
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.46);
+}
+
+
+/* Form Elements */
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  border-radius: 3px;
+  padding: 7px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: auto;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+  margin: 0 5px 0 0;
+}
+
+input[type="checkbox"] {
+  margin: auto 5px auto 0;
+}
+
+div {
+  display: grid;
+  grid-gap: 10px;
+  margin: 20px 0;
+}
+
+.center-div {
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+li {
+  display: flex;
+  padding-bottom: 6px;
+}
+
+p {
+  margin: 0;
+}
+
+.introduction-p {
+  margin-top: 10px;
+}
+
+
+/* Button Styles */
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 3px #999;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 1px 2px #666;
+  transform: translateY(4px);
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 414px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 40px 60px;
+  }
+
+  label,
+  .textarea-p {
+    text-align: right;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1420px) {
+  main {
+    width: 40%;
+  }
+}
+
+
+/* Media Queries Landscape Mode */
+
+@media screen
+  and (min-width: 320px)
+  and (orientation: landscape) {
+    div {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 40px;
+    }
+
+    label,
+    .textarea-p {
+      text-align: right;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+    }
+}

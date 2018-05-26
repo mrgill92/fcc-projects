@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Survey Form Project">
+	<!-- Title -->
+	<title>Survey Form</title>
+	<!-- Favicon -->
+	<link rel="icon" href="#">
+	<!-- External Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- CSS Styling -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Survey Form</h1>
+  </header>
+
+  <main>
+
+    <form action="submit">
+
+			<p class="introduction-p">Let us know how we can improve freeCodeCamp</p>
+
+      <div class="center-div">
+        <label for="name">* Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="center-div">
+        <label for="email">* E-mail:</label>
+        <input type="text" id="email" name="user_email" placeholder="Enter your email address" required>
+      </div>
+
+      <div class="center-div">
+        <label for="age">* Age:</label>
+        <input type="number" id="age" name="user_age" min="1" max="100" placeholder="Age" required>
+      </div>
+
+      <div class="center-div">
+        <label for="occupation">Which option best describes your current role?</label>
+        <select id="occupation" name="user_occupation">
+          <option value="select" disabled selected>Select an option</option>
+          <option value="student">Student</option>
+          <option value="fulltimejob">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="notsay">Prefer Not To Say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="rating">How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <ul>
+          <li>
+            <input type="radio" name="rating" id="definitely" value="definitely">
+            <label>Definitely</label>
+          </li>
+          <li>
+            <input type="radio" name="rating" id="maybe" value="maybe">
+            <label>Maybe</label>
+          </li>
+          <li>
+            <input type="radio" name="rating" id="notsure" value="notsure">
+            <label>Not Sure</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="center-div">
+        <label for="mostliked">What do you like most in FCC?</label>
+        <select id="mostliked" name="user_mostliked">
+          <option value="select" selected disabled>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="opensource">Open Source</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Things that should be improved in the future (Check all that apply):</label>
+        <ul>
+          <li>
+            <input type="checkbox" id="front-end" name="front-end" value="front-end">
+            <label for="front-end">Front-end Projects</label>
+          </li>
+          <li>
+            <input type="checkbox" id="back-end" name="back-end" value="back-end">
+            <label for="back-end">Back-end Projects</label>
+          </li>
+          <li>
+            <input type="checkbox" id="data-visual" name="data-visual" value="data-visual">
+            <label for="data-visual">Data Visualization</label>
+          </li>
+          <li>
+            <input type="checkbox" id="challenges" name="challenges" value="challenges">
+            <label for="front-end">Challenges</label>
+          </li>
+          <li>
+            <input type="checkbox" id="gitter-help" name="gitter-help" value="gitter-help">
+            <label for="gitter-help">Gitter help rooms</label>
+          </li>
+          <li>
+            <input type="checkbox" id="videos" name="videos" value="videos">
+            <label for="videos">Videos</label>
+          </li>
+          <li>
+            <input type="checkbox" id="meetups" name="meetups" value="meetups">
+            <label for="meetups">City Meetups</label>
+          </li>
+          <li>
+            <input type="checkbox" id="wiki" name="wiki" value="wiki">
+            <label for="wiki">Wiki</label>
+          </li>
+          <li>
+            <input type="checkbox" id="forum" name="forum" value="forum">
+            <label for="gitter-help">Forum</label>
+          </li>
+          <li>
+            <input type="checkbox" id="courses" name="courses" value="courses">
+            <label for="courses">Additional Courses</label>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="textarea-p">Any Comments or Suggestions?</p>
+        <textarea name="textarea" id="textarea" cols="25" rows="5" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <input class="button" type="submit" value="Submit">
+
+		</form>
+
+  </main>
+
+</body>
+
+</html>
